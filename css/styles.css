@@ -1,0 +1,84 @@
+
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {height: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end css reset */
+
+body {
+	background-color: black;
+	overflow: none;
+}
+
+body {min-width:960px; overflow:hidden;}
+body > div {position: absolute; top:0; width:100%; height: 100%}
+#buttons {z-index: 100; width:100%; height:0;}
+#buttons>img {position: absolute;}
+#buttons>.button {top: 450px;}
+#illustrations {z-index: 50; height: 100%; width: 100%; position: absolute; left: 0;}
+#illustrations>img {position:absolute; z-index:1; height: inherit; height: inherit; left: 0;}
+#illustrations>img.white {z-index:2;}
+#logo {position: absolute; top: 53px; right: 108px; width: auto; height: auto; z-index: 102;}
+#logo img, #logo a {width: 33px; position: absolute;}
+#logo a {z-index:2;}
+#logo_backer {z-index:1;}
+#close {display: none; opacity: 0;}
+#pdf {position: absolute; bottom: 200px; right: 80px; width: auto; height: 14px; z-index: 100;}
+#pdf img {height: 14px;}
+img#indigo {width: 196px; position: relative; top: 420px; z-index:0;}
+#next {right: 80px;}
+#prev {left: 80px;}
+#videowrapper {position: absolute;}
+#video0,#video1,#video2,#placeholder {z-index: 1; height: auto; width: 100%; position: absolute;}
+#video1 {z-index: 10;}
+#video2 {z-index: 11;}
+#video3 {z-index: 101; display:none;}
+#blackbar {background-color:black; top:0; left:0; position:absolute; z-index: 1000;}
+#blackbar.bottom,#blackbar.top {width: 100%;}
+#clickzone {cursor: pointer; z-index: 100; display: none;}
+#caseOverlays {z-index: 99; position: absolute; width: 42.5%; height: 30%; left: 53.4%; top: 59%;}
+#caseOverlays img {display:none; opacity: 0; width: 100%; height: 100%; position: absolute;}
+
+.hidden {opacity: 0;}
+.button {cursor: pointer;}
+img.center {display: block; margin: 0 auto;}
